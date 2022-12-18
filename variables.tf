@@ -1,5 +1,5 @@
 variable "project" {
-  default = "kstecenko-372015"
+  
 }
 
 variable "region" {
