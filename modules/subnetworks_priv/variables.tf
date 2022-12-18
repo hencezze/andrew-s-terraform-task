@@ -1,4 +1,4 @@
-variable "network1" {
+variable "network" {
   type = string
 }
 
