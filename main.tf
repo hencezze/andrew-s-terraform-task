@@ -14,13 +14,13 @@ resource "google_compute_network" "vpc_network" {
 module "subnetworks_public" {
   source = "./modules/subnetworks_pub"
   region = var.region
-  network1 = google_compute_network.vpc_network.id
+  network = google_compute_network.vpc_network.id
 }
 
 module "subnetworks_private" {
   source = "./modules/subnetworks_priv"
   region = var.region
-  network1 = google_compute_network.vpc_network.id
+  network = google_compute_network.vpc_network.id
 }
 
 
