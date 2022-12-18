@@ -13,7 +13,7 @@ resource "google_compute_subnetwork" "private-subnetworks" {
   name          = each.key
   ip_cidr_range = each.value
   region        = var.region
-  network       = var.network1
+  network       = var.network
   private_ip_google_access = true
 }
 
